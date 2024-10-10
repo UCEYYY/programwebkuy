@@ -1,0 +1,111 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #8DBFD3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pricing-table {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+@media (min-width: 900px) {
+    .pricing-table {
+        flex-direction: row;
+    }
+}
+
+.pricing-plan {
+    border-bottom: 1px solid #e1f1ff;
+    padding: 20px; 
+}
+
+@media (min-width: 900px) {
+    .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        flex: 1;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+}
+
+.pricing-img {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.pricing-header {
+    color: #466aa0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px; 
+}
+
+.pricing-features {
+    margin: 25px 0;
+    text-align: center; 
+    color: #348efe;
+}
+
+.pricing-features-item {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 14px; 
+    line-height: 1.6; 
+    padding: 8px 0; 
+    border-top: 1px solid #f7f7f7;
+}
+
+.pricing-features-item:last-child {
+    border-bottom: 1px solid #fbfdfe;
+}
+
+.pricing-price {
+    color: #338FC2;
+    display: block;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.pricing-button {
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: #348efe;
+    display: inline-block;
+    padding: 12px 30px; 
+    text-decoration: none;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+    background-color: #e1f1ff;
+}
+
+.pricing-button.is-featured {
+    background-color: #48aaff;
+    color: white;
+}
+
+.pricing-button.is-featured:hover,
+.pricing-button.is-featured:focus {
+    background-color: #269aff;
+}
